@@ -28,7 +28,7 @@ _coverage:
 	mkdir _coverage
 
 coverage-profile: _coverage
-	go test -coverprofile=_coverage/coverage.out ./src/...
+	go test -coverprofile=_coverage/coverage.out ./...
 
 coverage-html: coverage-profile
 	go tool cover -html=_coverage/coverage.out -o _coverage/coverage.html
